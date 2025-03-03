@@ -60,9 +60,6 @@ def narwhal(input_features, datapoints):
         
         distance = math.sqrt(to_sqrt)
         closest_points.append([point, distance])
-    
-    def by_distance(x):
-        return x[1]
 
     closest_points.sort(key=by_distance)
     preoutput = closest_points[0][0]
