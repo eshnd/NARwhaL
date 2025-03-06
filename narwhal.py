@@ -42,7 +42,7 @@ def narwhal(input_features, datapoints_old):
 
     for i in range(len(first_closest)):
         if first_closest[i] == second_closest[i]:
-            first_closest[i] *= 1.002
+            first_closest[i] *= 0.99999
 
     new_point = [[input_features[0]]]
 
